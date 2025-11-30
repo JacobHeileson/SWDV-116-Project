@@ -39,5 +39,3 @@ This project was developed as part of the SWDV 116 curriculum to practice buildi
 3. Navigate using the menu to explore different sections.  
 4. Use the Estimate page to select options and automatically calculate pricing.
 
-## 📂 File Structure
-
