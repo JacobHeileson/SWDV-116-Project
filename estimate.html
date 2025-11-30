@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimate Calculator - Jake's Outfitters</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="estimate.js"></script>
+</head>
+
+<body>
+
+    <!--Nav Bar-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="estimate.html">Estimate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Calculator Section -->
+<section id="estimate">
+  <h2>Trip Estimate Calculator</h2>
+  <p class="services-intro">
+    Use this tool to estimate the total cost of your hunting, fishing, or camping trip.
+  </p>
+
+  <!-- Activity selection -->
+  <label for="activity"><strong>Select Activity:</strong></label>
+  <select id="activity">
+    <option value="hunt">Hunting Only</option>
+    <option value="fish">Fishing Only</option>
+    <option value="both">Hunting + Fishing</option>
+    <option value="camp">Camping Only</option>
+  </select>
+
+  <!-- Species (for hunting) -->
+  <div class="field-group" id="speciesGroup">
+    <label for="species"><strong>Select Species (Hunting):</strong></label>
+    <select id="species">
+      <option value="whitetail">Whitetail - $1000</option>
+      <option value="mule">Mule Deer - $1200</option>
+      <option value="bear">Black Bear - $1500</option>
+      <option value="elk">Elk - $2500</option>
+      <option value="moose">Moose - $3000</option>
+      <option value="turkey">Turkey - $400</option>
+    </select>
+  </div>
+
+  <!-- Tag Holders (for hunting) -->
+  <div class="field-group" id="tagGroup">
+    <label for="tagHolders"><strong>Number of Tag Holders:</strong></label>
+    <input type="number" id="tagHolders" min="1" value="1">
+  </div>
+
+  <!-- Guests (shown for all activities) -->
+  <div class="field-group" id="guestsGroup">
+    <label for="guests"><strong>Number of Guests (additional to tag holders):</strong></label>
+    <input type="number" id="guests" min="0" value="0">
+    <div class="small muted" id="guestNote">For hunting, guests allowed ≤ tag holders.</div>
+  </div>
+
+  <!-- Guides (not used for camping-only) -->
+  <div class="field-group" id="guidesGroup">
+    <label for="guides"><strong>Number of Guides:</strong></label>
+    <select id="guides">
+      <option value="0">0 Guides</option>
+      <option value="1">1 Guide</option>
+      <option value="2">2 Guides</option>
+    </select>
+  </div>
+
+  <!-- Gear -->
+  <div class="field-group" id="gearGroup">
+    <label for="gear"><strong>Gear Package:</strong></label>
+    <select id="gear">
+      <option value="none">Bringing Own Gear</option>
+      <option value="full">Full Gear Package ($75/person/day)</option>
+      <option value="partial">Partial Gear Package ($35/person/day)</option>
+    </select>
+  </div>
+
+  <!-- Processing -->
+<div class="field-group" id="processingGroup">
+  <label for="processing">Add Meat Processing:</label>
+  <div class="input-wrapper">
+    <input type="checkbox" id="processing">
+  </div>
+</div>
+
+
+  <!-- Days & Nights -->
+  <div class="field-group" id="daysGroup">
+    <label for="days"><strong>Number of Days (activity days):</strong></label>
+    <input type="number" id="days" min="1" value="1">
+  </div>
+
+  <div class="field-group" id="nightsGroup">
+    <label for="nights"><strong>Number of Nights (for lodging):</strong></label>
+    <input type="number" id="nights" min="0" value="0">
+  </div>
+
+  <!-- Camping type (free-range vs lodge) -->
+  <div class="field-group" id="campingTypeGroup">
+    <label for="campType"><strong>Camping Type:</strong></label>
+    <select id="campType">
+      <option value="free">Free-Range Camping (no surcharge)</option>
+      <option value="lodge">Lodge (+$350/night)</option>
+    </select>
+  </div>
+
+  <!-- Calculate button -->
+  <button id="calcButton">Calculate Estimate</button>
+
+  <!-- Output -->
+  <h3 id="estimateOutput"></h3>
+  <div id="breakdown" class="muted"></div>
+</section>
+
+
+</body>
+</html>
+

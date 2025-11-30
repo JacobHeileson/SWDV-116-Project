@@ -1,0 +1,166 @@
+nav {
+  background-color: #553204;    /*Color of the nav bar*/
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;    /*Aligning the nav bar across the top*/
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;      /*Formatting text for nav bar*/
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: burlywood; /*Text color when hovering with mouse*/
+}
+
+
+#home {
+    font-size: 24px;
+    font-family:serif;
+    color:#06630f;
+    text-align: center;
+}
+#Picture {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Picture figcaption {
+    font-size: 14px;
+    font-family:Verdana, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 8px;
+}
+
+body {
+    background-color: rgba(222, 184, 135, 0.5);
+}
+
+p {
+    font-family:sans-serif;
+    font-size: 18px;
+    margin-left: 36px;
+}
+
+ul {
+    font-family:sans-serif;
+    font-size: 18px;
+    margin-left: 36px;
+}
+
+h1 {
+    font-size: 36px;
+    font-family:Verdana, Tahoma, sans-serif;
+    color: #06630f;
+}
+
+h2 {
+    margin-left: 20px;
+    font-size: 24px;
+    font-family:Verdana, Tahoma, sans-serif;
+    color: #06630f;
+
+}
+
+.services-intro {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+h3 {
+    margin-left: 30px;
+    font-size: 16px;
+    font-family:Verdana, Tahoma, sans-serif;
+    color: #06630f;
+}
+
+.contact-intro {
+    text-align: center;
+    font-size: 20px;
+    width: 70%;
+    margin: 20px auto 40px auto;
+    line-height: 1.6;
+}
+
+#contact-info,
+#hours {
+    width: 70%;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+
+#contact-info h2,
+#hours h2 {
+    color: #06630f;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+
+#estimate {
+    width: 70%;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#estimate input,
+#estimate select {
+    width: 250px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#estimate label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.input-wrapper {
+    text-align: left;
+}
+
+#processingGroup input[type="checkbox"] {
+    width: auto;       
+    margin-left: 0;    
+    transform: scale(1.25); 
+}
+
+#estimateOutput {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #06630f;
+}
+
+#calcButton {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #553204;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#calcButton:hover {
+    background: #70480a;
+}
